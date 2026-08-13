@@ -5,12 +5,14 @@ public class Factorial {
         }
         long result = 1;
         for (int i = 2; i <= n; i++) {
-            result*= i;
+            result *= i;
         }
         return result;
     }
-     public static void main(String[] args) {
+
+    public static void main(String[] args) {
         int number = 5; // Example number to calculate factorial
+        long result = factorial(number); // Call the method
         System.out.println("Factorial of " + number + " is: " + result);
     }
 }
