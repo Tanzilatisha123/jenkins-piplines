@@ -1,11 +1,6 @@
 pipeline {
     agent any
     stages {
-        // stage('Checkout') {
-        //     steps {
-        //         git branch: 'main', url: 'https://github.com/Tanzilatisha123/jenkins-piplines.git'
-        //     }
-        }
         stage('Compile') {
             steps {
                 bat 'javac Factorial.java TestFactorial.java'
@@ -40,3 +35,4 @@ pipeline {
             echo 'Build or test failed'
         }
     }
+}
